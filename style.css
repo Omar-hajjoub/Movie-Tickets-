@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodycart{
+    max-width: 100%;
+    min-height: 100%;
+    height: 125vh;
+    background-color: gray;
+}
+
+.title{
+    text-align: center;
+  width: 100%;
+  h1{
+    padding: 30px;
+font-size: 45px;
+  }
+}
+
+
+
+.seting{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+max-width: 100%;
+}
+
+.cardcenma{
+    width: 100%;
+    position: relative;
+   
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -50px;
+        left: 50%;
+        transform: translate(-50%,50%);
+          width: 80%;
+          height: 100px;
+          background-color: rgb(255, 253, 253);
+    }
+
+}
+.Seating1{
+  
+    padding: 20px;
+    display: flex;
+flex-wrap: wrap;
+position: relative;
+
+.thisbox{
+    position: relative;
+    div{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        margin: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+
+    .sate.occupied{
+        background-color: red;
+    }
+    .sate.selectd{
+background-color: chartreuse;
+    }
+}
+
+}
+
+.btnvarbt{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btnvart1{
+        background-color: rgba(250, 235, 215, 0.426);
+        width: 400px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        border-radius: 30px;
+small{
+    font-size: 18px;
+    margin: 30px;
+}
+        span{
+            margin-left: 5px;
+            border-radius: 20px 20px 0px 0px;
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background-color: rgb(9, 250, 5);
+           
+        }
+        #black{
+            background-color: rgb(31, 29, 29);
+        }
+        #Availibal{
+            background-color: chartreuse;
+        }
+        #reed{
+            background-color: red;
+        }
+       
+    }
+    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+        flex-wrap: wrap;
+        max-height: 100%;
+width: 100%;
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+     label{
+position: relative;
+left: 20px;
+}
+        input{
+            margin: 25px;
+            border-radius: 30px;
+            outline: navy;
+            border: none;
+            text-align: center;
+            height: 20px;
+            width: 250px;
+
+        }
+
+        #mov{
+            position: relative;
+            left: 20px; 
+            font-size: 18px;
+        }
+
+        select{
+            appearance:none;
+            margin: 25px;
+            border-radius: 30px;
+            outline: navy;
+            border: none;
+            text-align: center;
+            height: 20px;
+            width: 250px;
+        }
+    }
+
+    .btn{
+        #add{
+            background-color:#03eded; /* Green */
+            border: none;
+            outline: none;
+            height: 40px;
+            width: 110px;
+            border-radius: 30px;
+            transition: 2s;
+            cursor: pointer;
+
+            &:hover{
+                transform:scale(1.1);
+                transition: 1s;
+                background-color:#017db7; /* Green */
+
+            }
+        }
+    }
+}
+
+.int{
+    display: flex;
+}
+
+
+.cardrezerve{
+    width: 100%;
+    .card{
+        position: absolute;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%,50%);
+        transition: 1s;
+        background-color: aliceblue;
+          height: 300px;
+        width: 500px;
+border-radius:20px ;    
+    text-align: center;
+
+        p{
+            margin-left: 10px;
+            text-align: left;
+            padding: 6px;
+            font-size: 16px;
+            font-weight: bold;
+
+            span{
+                padding-left: 10px;
+                text-align: center;
+                font-size: 18px;
+                font-family: 'Arial Narrow Bold', sans-serif;
+            }
+        }
+
+        .confirm{
+            position: relative;
+            top: 20px;
+            #confrm{
+                background-color:#03eded; /* Green */
+                border: none;
+                outline: none;
+                height: 30px;
+                width: 110px;
+                border-radius: 30px;
+                transition: 2s;
+                cursor: pointer;
+    
+                &:hover{
+                    transform:scale(1.1);
+                    transition: 1s;
+                    background-color:#017db7; /* Green */
+    
+                }
+
+              
+            }
+            #cancel{
+                background-color:#ed1e03; /* Green */
+                border: none;
+                outline: none;
+                height: 30px;
+                width: 110px;
+                border-radius: 30px;
+                transition: 2s;
+                cursor: pointer;
+    
+                &:hover{
+                    transform:scale(1.1);
+                    transition: 1s;
+                    background-color:#ff0000; /* Green */
+    
+                }
+            }
+        }
+    }
+
+    .cardconfirm{
+        position: absolute;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%,50%);
+        transition: 1s;
+        background-color: aliceblue;
+          height: 300px;
+        width: 500px;
+border-radius:20px ;    
+    text-align: center;
+p{
+    padding-top: 20px;
+    font-size: 20px;
+    .sir{
+        color: rgb(255, 0, 0);
+        border-bottom: 1px solid black;
+    }
+}
+    svg{
+        padding-top: 30px;
+        height: 200px;
+        width: 200px;
+    }
+    }
+
+
+}
+
+@media (max-width:500px) {
+    .bodycart{
+height: 100%;
+    }
+ footer{
+
+    .form{
+        flex-direction: column;
+
+      
+
+        label{
+            left:10px;
+
+        }
+
+        select{
+            width: 200px;
+        }
+
+        #mov{
+            font-size: 16px;
+            margin-left: -15px;
+        }
+        
+    }
+
+ 
+    .btn{
+        #add{
+     position: relative;
+            top: 20px;
+            bottom: 30px;
+
+        }
+    }
+  
+ }
+
+ .Seating1{
+    max-width: 100%;
+    box-sizing: border-box;
+
+    div{
+        width: 30px;
+        margin: 2px;
+    }
+ }
+
+
+ .cardrezerve{
+    .card,.cardconfirm{
+        max-width: 100%;
+
+    }
+ }
+
+    
+}
